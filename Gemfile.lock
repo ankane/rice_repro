@@ -1,13 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    rice (4.0.2)
+    rice (3.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  rice (~> 4)
+  rice (~> 3)
 
 BUNDLED WITH
    2.1.4
