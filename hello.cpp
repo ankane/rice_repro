@@ -13,5 +13,5 @@ extern "C"
 void Init_hello()
 {
   Class rb_cHello = define_class<Test>("Hello").define_constructor(Constructor<Test>());
-  rb_cHello.define_function("world=", [](Object value) {});
+  rb_cHello.define_method("world=", [](Object self, Object value) {});
 }
