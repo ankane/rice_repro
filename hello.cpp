@@ -2,9 +2,16 @@
 
 using namespace Rice;
 
+class Test
+{
+public:
+  Test() {}
+};
+
+
 extern "C"
 void Init_hello()
 {
-  Class rb_cHello = define_class("Hello");
+  Class rb_cHello = define_class<Test>("Hello").define_constructor(Constructor<Test>());
   rb_cHello.define_function("world=", [](Object value) {});
 }
