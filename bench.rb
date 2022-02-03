@@ -5,4 +5,4 @@ hello = Hello.new
 hello.world = Hello.new
 GC.stress = false
 GC.start
-puts "hello"
+p hello.world
